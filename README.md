@@ -15,6 +15,8 @@ Getting Started
 ---------------
 
     $ git clone https://github.com/haruair/gumtree-watcher.git
+    $ cd gumtree-watcher
+    $ npm install # do the right thing
     $ cp config.sample.json config.json
     $ vi config.json # Edit the config
     $ node index.js # May you can do via cron
