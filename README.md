@@ -8,7 +8,7 @@ Check the latest items from gumtree.com.au and send a message through Telegram.
 Requirements
 ------------
 
-- Telegram API (user or bot)
+- [Telegram API](https://core.telegram.org/api) (user or bot token)
 - NodeJS obviously
 
 Getting Started
