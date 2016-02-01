@@ -11,9 +11,10 @@ function getOffers(keywords) {
       var offers = [];
       area.each(function() {
         var offer = $(this);
+        
         offers.push({
-          img: (''+offer.find('.rs-img img').attr('src')).trim(),
-          link: (''+offer.find('.rs-ad-title a').attr('href')).trim(),
+          img: offer.find('.rs-img img').attr('src') ? offer.find('.rs-img img').attr('src').trim() : '',
+          link: offer.find('.rs-ad-title a').attr('href') ? offer.find('.rs-ad-title a').attr('href').trim() : '',
           name: offer.find('.rs-ad-title').text().trim(),
           desc: offer.find('.rs-ad-description').text().trim(),
           area: offer.find('.rs-ad-location').text().replace(/  /gi, '').trim(),
